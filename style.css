@@ -79,6 +79,10 @@
     outline: none;
 }
 
+#list li p{
+    user-select: none;
+}
+
 li span{
     position: absolute;
     right: 10px;
