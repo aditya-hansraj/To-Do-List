@@ -64,6 +64,9 @@
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #list li{
