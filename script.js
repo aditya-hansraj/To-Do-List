@@ -17,7 +17,7 @@ $(document).ready(() => {
         var li = $("<li class='unchecked'>");
         var cross = $("<span>")
         cross.html("\u00d7");
-        li.html(`<p>${newtask}<p>`);
+        li.html(`<p>${newTask}<p>`);
         li.append(cross);
         li.hide().appendTo(list).slideDown(function(){
             saveData();
