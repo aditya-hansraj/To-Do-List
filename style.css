@@ -166,21 +166,19 @@ li span:hover{
         font-size: 1.5em;
     }
     #add{
-        height: 40px;
+        height: 50px;
         padding-left: 10px;
         margin-bottom: 20px;
         box-shadow: -9px 9px 15px rgba(0, 0, 0, 0.488);
     }
     #add input[type="text"]{
-        height: 40px;
+        height: 50px;
         font-size: 1em;
         padding: 10px;
     }   
     #add button{
-        height: 40px;
-        width: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        height: 50px;
+        width: 50px;
         font-size: 2.5em;
     }
 }
