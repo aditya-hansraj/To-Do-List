@@ -80,7 +80,11 @@ body{
 
 #list li p{
     user-select: none;
+    width: 70%;
+    overflow: hidden;
+    white-space: normal;
 }
+
 
 li span{
     position: absolute;
