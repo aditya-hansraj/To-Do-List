@@ -23,12 +23,65 @@ body{
     box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.479);
 }
 
+#todo header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #todo h2{
     color: rgb(33, 33, 33);
     margin: 30px 15px;
     font-size: 2.5em;
     user-select: none;
     font-weight: 900;
+}
+
+#opt{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 80ms;
+    cursor: pointer;
+}
+
+#opt i{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#opt i:active{
+    background-color: rgba(217, 216, 216, 0.525);
+}
+
+#opt ul{
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    z-index: 1;
+}
+
+#opt li{
+    font-size: 0.7em;
+    background-color: #d7d6d6;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#opt li:active{
+    background-color: rgb(176, 176, 176);
+}
+
+#opt li:not(:last-child) {
+    border-bottom: 1px solid;
 }
 
 #add{
@@ -74,7 +127,6 @@ body{
     padding: 15px 15px 15px 45px;
     user-select: none;
     position: relative;
-    user-select: auto;
     outline: none;
 }
 
@@ -112,9 +164,8 @@ li span:hover{
 #list li:not(:last-child)::after {
     content: '';
     display: block;
-    height: 1px; 
-    background-color: #000;
-    margin-top: 10px; 
+    border-top: 1px solid;
+    margin-top: 10px;  
 }
 
 #list li::before{
@@ -172,6 +223,11 @@ li span:hover{
     #todo h2{
         margin: 15px 10px;
         font-size: 1.5em;
+    }
+    #opt li{
+        font-size: 0.5em;
+        height: 25px;
+        width: 70px;
     }
     #add{
         height: 50px;
