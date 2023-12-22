@@ -75,6 +75,6 @@ $(document).ready(() => {
         if($('#list li').length > $('.checked').length)
             $('#check').text("Check All");
         else
-            $('#check').text("Unheck All");
+            $('#check').text("Uncheck All");
     }
 });
