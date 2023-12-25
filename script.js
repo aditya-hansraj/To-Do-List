@@ -1,6 +1,5 @@
 $(document).ready(() => {
     check();
-    getData();
     
     const input = $("#input");
     const list = $("#list");
