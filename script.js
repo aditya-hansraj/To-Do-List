@@ -4,6 +4,13 @@ $(document).ready(() => {
     const input = $("#input");
     const list = $("#list");
 
+    function check(){
+        if($('#list li').length > $('.checked').length)
+            $('#check').text("Check All");
+        else
+            $('#check').text("Uncheck All");
+    }
+
     function saveData() {
         localStorage.setItem("data", list.html());
     }
@@ -65,6 +72,8 @@ $(document).ready(() => {
             $('#check').text("Check All");
         }
         $("#opt ul").fadeOut('fast');
+
+        saveDate();
     });
 
     $("#clear").click(function() {
@@ -72,11 +81,5 @@ $(document).ready(() => {
     });
 
     getData();
-
-    function check(){
-        if($('#list li').length > $('.checked').length)
-            $('#check').text("Check All");
-        else
-            $('#check').text("Uncheck All");
-    }
+    
 });
