@@ -1,4 +1,6 @@
 $(document).ready(() => {
+    check();
+    
     const input = $("#input");
     const list = $("#list");
 
