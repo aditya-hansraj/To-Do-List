@@ -12,11 +12,11 @@ $(document).ready(() => {
     }
 
     function saveData() {
-        localStorage.setItem("data", list.html());
+        localStorage.setItem("data", todo.html());
     }
 
     function getData() {
-        list.html(localStorage.getItem("data"));
+        todo.html(localStorage.getItem("data"));
     }
 
     $("#add").submit(function(event) {
