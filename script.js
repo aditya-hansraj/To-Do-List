@@ -3,6 +3,7 @@ $(document).ready(() => {
     
     const input = $("#input");
     const list = $("#list");
+    const todo = $("#todo");
 
     function check(){
         if($('#list li').length > $('.checked').length)
