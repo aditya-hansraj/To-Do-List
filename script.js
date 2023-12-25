@@ -73,7 +73,7 @@ $(document).ready(() => {
         }
         $("#opt ul").fadeOut('fast');
 
-        saveDate();
+        saveData();
     });
 
     $("#clear").click(function() {
