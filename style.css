@@ -14,7 +14,6 @@ body{
 
 #todo{
     background-color: rgb(193, 191, 191);
-    width: 100%;
     max-width: 600px;
     min-width: 500px;
     margin: 0 auto;
@@ -127,8 +126,8 @@ body{
     padding: 15px 15px 15px 45px;
     user-select: none;
     position: relative;
-    cursor: pointer;
     outline: none;
+    cursor: pointer;
 }
 
 #list li p{
