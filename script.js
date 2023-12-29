@@ -3,14 +3,13 @@ $(document).ready(() => {
 
     const input = $("#input");
     const list = $("#list");
-    const todo = $("#todo");
 
     function saveData() {
-        localStorage.setItem("data", todo.html());
+        localStorage.setItem("data", list.html());
     }
 
     function getData() {
-        todo.html(localStorage.getItem("data"));
+        list.html(localStorage.getItem("data"));
     }
 
     $("#add").submit(function(event) {
