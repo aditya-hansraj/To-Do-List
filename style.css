@@ -224,10 +224,14 @@ li span:hover{
         margin: 15px 10px;
         font-size: 1.5em;
     }
+    #opt ul{
+        position: relative;
+        left: 50px;
+    }
     #opt li{
-        font-size: 0.5em;
-        height: 25px;
-        width: 70px;
+        font-size: 0.7em;
+        height: 40px;
+        width: 120px;
     }
     #add{
         height: 50px;
