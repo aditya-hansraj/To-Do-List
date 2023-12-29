@@ -216,9 +216,15 @@ li span:hover{
         height: 100vh;
         max-width: 500px;
         min-width: 400px;
-        border-radius: 30px;
+        /* border-radius: 30px; */
         box-shadow: none;
         box-sizing: border-box;
+        padding-top: 0;
+    }
+    header{
+        height: 100px;
+        margin-top: 0;
+        padding-top: 0;
     }
     #todo h2{
         margin: 15px 10px;
@@ -227,6 +233,7 @@ li span:hover{
     #opt ul{
         position: relative;
         left: 50px;
+        margin: 0;
     }
     #opt li{
         font-size: 0.7em;
