@@ -1,5 +1,4 @@
 $(document).ready(() => {
-    check(); 
 
     const input = $("#input");
     const list = $("#list");
@@ -79,4 +78,6 @@ $(document).ready(() => {
         else
             $('#check').text("Uncheck All");
     }
+
+    check();
 });
